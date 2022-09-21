@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="sv">
+<html lang="sv" dir="ltr">
   <head>
     <meta charset="UTF-8" />
+    <title>Bali guiden</title>
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="description" content="Website for travel agency Bali guiden" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.min.css" />
     <script type="module" src="/main.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,9 +13,138 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap"
       rel="stylesheet"
     />
-    <title>Bali guiden</title>
+    <link rel="stylesheet" href="css/style.min.css" />
   </head>
   <body>
-    <div id="app"></div>
+    <header>
+      <section id="cities">
+        <ul>
+          <li>
+            <a href="#">CANGGU</a>
+          </li>
+          <li>
+            <a href="#">ULUWATU</a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="assets/svg/bali-outlined.svg" alt="Bali guiden logo"
+            /></a>
+          </li>
+          <li>
+            <a href="#">UBUD</a>
+          </li>
+          <li>
+            <a href="#">LOVINA</a>
+          </li>
+        </ul>
+      </section>
+      <button
+        class="hamburger-button"
+        aria-label="Open the menu"
+        aria-hidden="true"
+        aria-expanded="false"
+      >
+        <span></span>
+      </button>
+      <nav>
+        <ul>
+          <li>
+            <a href="#">Hem</a>
+          </li>
+          <li>
+            <a href="#">Områden</a>
+          </li>
+          <li>
+            <a href="#">Boende</a>
+          </li>
+          <li>
+            <a href="#">Aktiviteter</a>
+          </li>
+          <li>
+            <a href="#">Utflykter</a>
+          </li>
+          <li>
+            <a href="#">Mat</a>
+          </li>
+          <li>
+            <a href="#">Generella råd</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section
+        id="cookies"
+        role="dialog"
+        aria-modal="false"
+        aria-labelledby="alert-box-title"
+        aria-describedby="alert-box-message"
+      >
+        <article id="cookie-warning">
+          <p>Vi använder cookies</p>
+        </article>
+        <article id="cookie-buttons">
+          <button>Neka</button>
+          <button>Acceptera</button>
+        </article>
+      </section>
+      <section id="hero-section">
+        <article id="hero-image">
+          <h1>BALI GUIDEN</h1>
+        </article>
+        <article id="hero-info">
+          <p>
+            Vi på Bali Guiden hjälper dig med din vistelse på Bali. Oavsett om
+            du är förstagångsbesökare eller veteran, om du tänker stanna en
+            vecka eller ett år, om du älskar en fartfylld tillvaro eller en lugn
+            omgivning så har vi tips och information som hjälper dig få ut det
+            mesta av din resa.
+          </p>
+          <span id="separator"></span>
+        </article>
+      </section>
+      <section id="cards">
+        <article id="card">
+          <img src="assets/images/bali-guiden-boende.JPG" alt="Boende" />
+          <h2>BOENDE</h2>
+        </article>
+        <article id="card">
+          <img
+            src="assets/images/bali-guiden-aktiviteter.JPG"
+            alt="Aktiviteter"
+          />
+          <h2>AKTIVITETER</h2>
+        </article>
+        <article id="card">
+          <img src="assets/images/bali-guiden-utflykter.JPG" alt="Utflykter" />
+          <h2>UTFLYKTER</h2>
+        </article>
+        <article id="card">
+          <img src="assets/images/bali-guiden-mat.jpg" alt="Mat" />
+          <h2>MAT</h2>
+        </article>
+      </section>
+      <section id="newsletter">
+        <p>
+          Missa inte det senaste som händer på Bali. Signa upp för vårt
+          nyhetsbrev här nedan!
+        </p>
+        <form>
+          <label class="visually-hidden" for="newsletter"
+            >Signa upp för vårat nyhetsbrev</label
+          >
+          <input
+            id="newsletter"
+            name="newsletter"
+            type="text"
+            placeholder="Din e-mail............"
+          />
+          <button>Prenumerera</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <h3>Copyright &copy;</h3>
+    </footer>
   </body>
 </html>

@@ -1,0 +1,27 @@
+// This file contains all application-wide Sass mixins.
+
+// Breakpoint mixins
+@mixin tablet {
+  @media screen and (min-width: $breakpoint-tablet) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (min-width: $breakpoint-desktop) {
+    @content;
+  }
+}
+
+// Mixin for creating the hamburger button spans
+@mixin create-hamburger-span($top, $width) {
+  position: absolute;
+  top: $top;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  content: '';
+  height: 0.2em;
+  width: $width;
+  background-color: $color-orange;
+  border-radius: 1em;
+}
