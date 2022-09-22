@@ -1,11 +1,11 @@
 // Variables and mixins
-@import 'abstracts/variables', 'abstracts/mixins';
+@import 'abstracts/functions', 'abstracts/mixins', 'abstracts/variables';
 
 // Normalize (third party vendor)
 @import 'vendors/normalize';
 
 // Base
-@import 'base/typography', 'base/base', 'base/helpers';
+@import 'base/base', 'base/helpers', 'base/typography';
 
 // Layout-related sections
 @import 'layout/header', 'layout/main', 'layout/footer';

@@ -27,10 +27,8 @@
           <li>
             <a href="#">ULUWATU</a>
           </li>
-          <li>
-            <a href="#"
-              ><img src="assets/svg/bali-outlined.svg" alt="Bali guiden logo"
-            /></a>
+          <li class="bali-image">
+            <img src="assets/svg/bali-outlined.svg" alt="Bali guiden logo" />
           </li>
           <li>
             <a href="#">UBUD</a>
@@ -41,14 +39,12 @@
         </ul>
       </section>
       <!-- HAMBURGER BUTTON -->
-      <button
-        class="hamburger-button"
-        aria-label="Open the menu"
-        aria-hidden="true"
-        aria-expanded="false"
-      >
-        <span></span>
+      <button>
+        <div></div>
+        <div></div>
+        <div></div>
       </button>
+
       <!-- MENU OVERLAY -->
       <nav>
         <ul>
@@ -78,7 +74,7 @@
     </header>
     <main>
       <!-- COOKIE BANNER -->
-      <section
+      <!-- <section
         id="cookie-banner"
         role="dialog"
         aria-modal="false"
@@ -92,13 +88,13 @@
           <button>Neka</button>
           <button>Acceptera</button>
         </article>
-      </section>
+      </section> -->
       <!-- HERO -->
       <section id="hero">
         <h1>BALI GUIDEN</h1>
       </section>
       <!-- INFORMATION -->
-      <section>
+      <section id="info">
         <p>
           Vi på Bali Guiden hjälper dig med din vistelse på Bali. Oavsett om du
           är förstagångsbesökare eller veteran, om du tänker stanna en vecka
@@ -106,7 +102,7 @@
           omgivning så har vi tips och information som hjälper dig få ut det
           mesta av din resa.
         </p>
-        <span id="separator"></span>
+        <div id="separator"></div>
       </section>
       <!-- CARDS -->
       <section id="cards">
@@ -141,9 +137,9 @@
           nyhetsbrev här nedan!
         </p>
         <form>
-          <label class="visually-hidden" for="newsletter"
-            >Signa upp för vårat nyhetsbrev</label
-          >
+          <label class="visually-hidden" for="newsletter">
+            Signa upp för vårat nyhetsbrev
+          </label>
           <input
             id="newsletter"
             name="newsletter"
