@@ -3,6 +3,17 @@
 header {
   padding: 0.3em 0;
   position: relative;
+  @include tablet {
+    padding-top: 1.2em;
+    padding-bottom: 1.2em;
+    padding-left: 0;
+    padding-right: 4em;
+  }
+  @include desktop {
+    padding-top: 1.2em;
+    padding-left: 6em;
+    padding-right: 6em;
+  }
   #cities {
     ul {
       li:not(.bali-image) {
@@ -15,6 +26,9 @@ header {
         height: toRem(50);
         @include tablet {
           height: toRem(61);
+        }
+        @include desktop {
+          height: toRem(68);
         }
       }
     }
@@ -31,6 +45,9 @@ header {
     position: absolute;
     top: 0;
     right: 0;
+    @include tablet {
+      padding: 2.4em;
+    }
     div {
       background-color: $color-orange;
       border-radius: 1em;
@@ -46,53 +63,4 @@ header {
       width: toRem(24.88);
     }
   }
-  nav {
-    display: none;
-  }
 }
-
-// li:not(.always-visible) {
-//   display: none;
-//   @include tablet {
-//     display: block;
-//   }
-// }
-// li img {
-//   height: toRem(50);
-//   @include tablet {
-//     height: toRem(61);
-//   }
-// }
-
-// button {
-//   height: 100%;
-//   margin: auto;
-//   width: fit-content;
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: space-between;
-//   align-items: flex-end;
-//   position: absolute;
-//   top: 1em;
-//   right: 1em;
-//   background-color: transparent;
-//   border: none;
-//   div {
-//     background-color: $color-orange;
-//     border-radius: 1em;
-//     height: toRem(3.12);
-//   }
-//   :nth-child(1) {
-//     width: toRem(22.31);
-//   }
-//   :nth-child(2) {
-//     width: toRem(19.35);
-//   }
-//   :nth-child(3) {
-//     width: toRem(24.88);
-//   }
-// }
-
-// nav {
-//   display: none;
-// }

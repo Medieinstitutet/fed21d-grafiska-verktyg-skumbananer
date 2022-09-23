@@ -1,0 +1,15 @@
+// This file contains all styles related to site cookie banner.
+
+#cookie-banner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: $color-peach;
+  z-index: 10;
+}
+
+.cookie-banner-read {
+  display: none;
+}

@@ -7,4 +7,7 @@ footer {
   color: $color-orange;
   font-size: toRem(12);
   font-weight: $font-weight-semi-bold;
+  @include tablet {
+    font-size: toRem(20);
+  }
 }
