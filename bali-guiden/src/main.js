@@ -14,9 +14,9 @@ cookieButtons.forEach(button => {
 });
 
 hamburgerButton.addEventListener('click', () => {
-  nav.style.transform = 'translateX(0)';
+  nav.classList.toggle('is-active');
 });
 
 closeButton.addEventListener('click', () => {
-  nav.style.transform = 'translateX(100%)';
+  nav.classList.toggle('is-active');
 });
