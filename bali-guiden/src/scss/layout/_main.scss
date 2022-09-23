@@ -4,14 +4,14 @@ main {
   #hero {
     display: flex;
     justify-content: center;
-    background-image: url('../../assets/images/bali-guiden-palmer-rotate.jpg');
+    background-image: url('/assets/images/bali-guiden-palmer-rotate.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     height: toRem(444);
     background-color: $color-white;
     opacity: 0.8;
     @include tablet {
-      background-image: url('../../assets/images/bali-guiden-palmer.jpg');
+      background-image: url('/assets/images/bali-guiden-palmer.jpg');
       height: toRem(472);
     }
     @include tablet {
