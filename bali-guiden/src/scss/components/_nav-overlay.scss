@@ -1,5 +1,22 @@
 // This file contains all styles related to site nav overlay.
 
 nav {
-  display: none;
+  transform: translateX(100%);
+  transition: all 0.1s linear;
+  width: 100vw;
+  height: 100vh;
+  z-index: 20;
+  top: 0;
+  left: 0;
+  background-color: $color-peach;
+  position: absolute;
+  ul {
+    display: flex;
+    flex-direction: column;
+    li {
+      a {
+        color: $color-white;
+      }
+    }
+  }
 }

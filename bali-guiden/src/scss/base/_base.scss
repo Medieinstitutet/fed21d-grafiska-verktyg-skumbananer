@@ -20,6 +20,10 @@ a {
   text-decoration: none;
   color: $color-black;
   font-size: toRem(24);
+  &:hover {
+    color: $color-orange;
+    text-decoration: underline;
+  }
 }
 
 a,
