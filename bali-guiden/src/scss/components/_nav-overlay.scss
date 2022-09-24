@@ -1,15 +1,15 @@
 // This file contains all styles related to site nav overlay.
 
 nav {
-  left: 100%;
-  transition: all 0.1s linear;
   width: 100vw;
   height: 100vh;
-  z-index: 20;
-  top: 0;
+  left: 100%;
   position: fixed;
-  background-color: $color-peach;
+  top: 0;
   padding-top: 9em;
+  background-color: $color-peach;
+  z-index: 20;
+  transition: all 0.2s linear;
   @include tablet {
     width: 50vw;
   }
@@ -19,20 +19,30 @@ nav {
   button {
     position: absolute;
     height: fit-content;
+    background-color: transparent;
+    border-style: none;
     font-size: 1.5em;
     color: $color-white;
     top: 0.8em;
     right: 0.8em;
     padding: 0;
+    @include tablet {
+      font-size: 2em;
+      top: 1em;
+      right: 0.5em;
+    }
   }
   ul {
     display: flex;
     flex-direction: column;
     li {
       margin: 1em 0;
-
       a {
         color: $color-white;
+        &:hover {
+          color: $color-white;
+          text-decoration: underline;
+        }
       }
     }
   }

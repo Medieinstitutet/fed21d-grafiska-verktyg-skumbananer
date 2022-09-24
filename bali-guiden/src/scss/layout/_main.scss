@@ -1,7 +1,7 @@
 // This file contains all styles related to the main section of the site.
 
 main {
-  #hero {
+  .hero {
     text-transform: uppercase;
     display: flex;
     justify-content: center;
@@ -33,7 +33,7 @@ main {
       }
     }
   }
-  #info {
+  .info {
     padding: 1.5em 3.6em;
     font-size: toRem(12);
     @include tablet {
@@ -51,7 +51,7 @@ main {
         margin-bottom: 4em;
       }
     }
-    #separator {
+    .separator {
       border-radius: 1em;
       height: toRem(5);
       width: toRem(241);
@@ -71,7 +71,7 @@ main {
     }
   }
 
-  #cards {
+  .cards {
     display: none;
     background-color: $color-apricot;
     color: $color-orange;
@@ -83,15 +83,11 @@ main {
       justify-items: center;
       padding: 5em;
       gap: 5em;
-      #card {
+      .card {
         text-transform: uppercase;
         box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
         width: toRem(240);
         height: toRem(400);
-        padding-top: toRem(24);
-        padding-right: toRem(24);
-        padding-bottom: toRem(116);
-        padding-left: toRem(24);
         padding: 1.5em;
         background-color: $color-white;
         border-radius: toRem(25);
@@ -112,7 +108,7 @@ main {
     }
   }
 
-  #newsletter {
+  .newsletter {
     background-color: $color-peach;
     text-align: center;
     @include desktop {
@@ -155,7 +151,6 @@ main {
         margin-left: auto;
         margin-right: auto;
         padding-left: 0.5em;
-
         &::placeholder {
           color: $color-orange;
           text-align: left;
@@ -209,7 +204,7 @@ main {
       }
     }
   }
-  #cookie-banner {
+  .cookie-banner {
     display: none;
   }
 }

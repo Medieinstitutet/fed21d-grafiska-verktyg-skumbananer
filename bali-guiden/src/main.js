@@ -1,8 +1,8 @@
 const cookieButtons = document.querySelectorAll('.cookie-button');
-const formButton = document.querySelector('#newsletter button');
-const hamburgerButton = document.querySelector('#hamburger-button');
-const closeButton = document.querySelector('#close-button');
-const cookieBanner = document.querySelector('#cookie-banner');
+const formButton = document.querySelector('.newsletter button');
+const hamburgerButton = document.querySelector('.hamburger-button');
+const closeButton = document.querySelector('.close-button');
+const cookieBanner = document.querySelector('.cookie-banner');
 const nav = document.querySelector('nav');
 
 formButton.disabled = true;
