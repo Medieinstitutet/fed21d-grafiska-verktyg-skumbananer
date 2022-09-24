@@ -5,6 +5,7 @@
     <title>Bali guiden</title>
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="description" content="Website for travel agency Bali guiden" />
+    <meta name="author" content="Alexander Rusiecki" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script type="module" src="/main.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -40,24 +41,34 @@
       <section id="cities">
         <ul>
           <li>
-            <a href="#">CANGGU</a>
+            <a href="#" aria-label="Canggu">Canggu</a>
           </li>
           <li>
-            <a href="#">ULUWATU</a>
+            <a href="#" aria-label="Uluwatu">Uluwatu</a>
           </li>
           <li class="bali-image">
-            <img src="assets/svg/bali-outlined.svg" alt="Bali guiden logo" />
+            <img
+              src="assets/svg/bali-outlined.svg"
+              alt="Bali guiden logo"
+              height="50"
+              width="80"
+            />
           </li>
           <li>
-            <a href="#">UBUD</a>
+            <a href="#" aria-label="Ubud">Ubud</a>
           </li>
           <li>
-            <a href="#">LOVINA</a>
+            <a href="#" aria-label="Lovina">Lovina</a>
           </li>
         </ul>
       </section>
       <!-- HAMBURGER BUTTON -->
-      <button id="hamburger-button">
+      <button
+        id="hamburger-button"
+        aria-label="Open the menu"
+        aria-hidden="true"
+        aria-expanded="false"
+      >
         <div></div>
         <div></div>
         <div></div>
@@ -65,28 +76,35 @@
 
       <!-- MENU OVERLAY -->
       <nav>
-        <button id="close-button">&#9587;</button>
+        <button
+          id="close-button"
+          aria-label="Close the menu"
+          aria-hidden="true"
+          aria-expanded="false"
+        >
+          &#9587;
+        </button>
         <ul>
           <li>
-            <a href="#">Hem</a>
+            <a href="#" aria-label="Hem">Hem</a>
           </li>
           <li>
-            <a href="#">Områden</a>
+            <a href="#" aria-label="Områden">Områden</a>
           </li>
           <li>
-            <a href="#">Boende</a>
+            <a href="#" aria-label="Boende">Boende</a>
           </li>
           <li>
-            <a href="#">Aktiviteter</a>
+            <a href="#" aria-label="Aktiviteter">Aktiviteter</a>
           </li>
           <li>
-            <a href="#">Utflykter</a>
+            <a href="#" aria-label="Utflykter">Utflykter</a>
           </li>
           <li>
-            <a href="#">Mat</a>
+            <a href="#" aria-label="Mat">Mat</a>
           </li>
           <li>
-            <a href="#">Generella råd</a>
+            <a href="#" aria-label="Generella råd">Generella råd</a>
           </li>
         </ul>
       </nav>
@@ -94,7 +112,7 @@
     <main>
       <!-- HERO -->
       <section id="hero">
-        <h1>BALI GUIDEN</h1>
+        <h1>Bali guiden</h1>
       </section>
       <!-- INFORMATION -->
       <section id="info">
@@ -111,26 +129,43 @@
       <section id="cards">
         <!-- CARD -->
         <article id="card">
-          <img src="assets/images/bali-guiden-boende.JPG" alt="Boende" />
-          <h2>BOENDE</h2>
+          <img
+            src="assets/images/bali-guiden-boende.JPG"
+            alt="Boende"
+            height="400"
+            width="240"
+          />
+          <h2>boende</h2>
         </article>
         <!-- CARD -->
         <article id="card">
           <img
             src="assets/images/bali-guiden-aktiviteter.JPG"
             alt="Aktiviteter"
+            height="400"
+            width="240"
           />
-          <h2>AKTIVITETER</h2>
+          <h2>aktiviteter</h2>
         </article>
         <!-- CARD -->
         <article id="card">
-          <img src="assets/images/bali-guiden-utflykter.JPG" alt="Utflykter" />
-          <h2>UTFLYKTER</h2>
+          <img
+            src="assets/images/bali-guiden-utflykter.JPG"
+            alt="Utflykter"
+            height="400"
+            width="240"
+          />
+          <h2>utflykter</h2>
         </article>
         <!-- CARD -->
         <article id="card">
-          <img src="assets/images/bali-guiden-mat.jpg" alt="Mat" />
-          <h2>MAT</h2>
+          <img
+            src="assets/images/bali-guiden-mat.jpg"
+            alt="Mat"
+            height="400"
+            width="240"
+          />
+          <h2>mat</h2>
         </article>
       </section>
       <!-- NEWSLETTER -->
@@ -140,11 +175,11 @@
           nyhetsbrev här nedan!
         </p>
         <form>
-          <label class="visually-hidden" for="newsletter">
+          <label class="visually-hidden" for="newsletter-input">
             Signa upp för vårat nyhetsbrev
           </label>
           <input
-            id="newsletter"
+            id="newsletter-input"
             name="newsletter"
             type="text"
             placeholder="Din e-mail............"

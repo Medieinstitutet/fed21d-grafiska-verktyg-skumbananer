@@ -15,6 +15,7 @@ header {
     padding-right: 6em;
   }
   #cities {
+    text-transform: uppercase;
     ul {
       li:not(.bali-image) {
         display: none;
