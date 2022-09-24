@@ -36,9 +36,10 @@ nav {
     display: flex;
     flex-direction: column;
     li {
-      margin: 1em 0;
+      margin: 1.5em 0;
       a {
         color: $color-white;
+        text-align: left;
         &:hover {
           color: $color-white;
           text-decoration: underline;
