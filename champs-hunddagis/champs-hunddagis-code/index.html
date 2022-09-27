@@ -5,9 +5,70 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
+    <script type="module" src="/main.js"></script>
   </head>
   <body>
-    <h1>Champs Hunddagis</h1>
-    <script type="module" src="/main.js"></script>
+    <header>
+      <img src="src/svg/champs-hunddagis-logo.svg" alt="champs-hunddagis-logo">
+      <nav class="nav-bar">
+        <ul>
+          <li>Tjänster</li>
+          <li>Omdömen</li>
+          <li>Priser</li>
+          <li>Om oss</li>
+          <li>Kontakt</li>
+        </ul>
+        <button class="login-btn">Logga in</button>
+      </nav>
+      <img src="src/svg/hamburger-menu.svg" alt="hamburger-menu">
+    </header>
+
+    <section class="hero-img">
+      <div class="background-opacity">
+        <div>
+          <h1>Hundarnas paradis</h1>
+          <p>Champ's hunddagis, när din hund själv får välja! <br> Ett safe space för alla sorters hundar.</p>
+          <button class="hire-btn">Anlita oss</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="our-services">
+      <h2>Våra tjänster</h2>
+      <div class="card-flexbox">
+        <div class="card">
+          <img src="src/images/dog-sleeping.jpg" alt="resting dog">
+          <h3>Övernattning</h3>
+          <p>Här kan din hund tillbringa natten eller flera nätter beroende på behov i egen säng.</p>
+        </div>
+        <div class="card">
+          <img src="src/images/three-dogs.jpg" alt="three dogs">
+          <h3>Dagpassning</h3>
+          <p>Låt oss ta hand om din hund medan du är på jobbet eller har andra åtaganden.</p>
+        </div>
+        <div class="card">
+          <img src="src/images/dogs-playing.jpg" alt="playing dogs">
+          <h3>Lek & Socialisering</h3>
+          <p>Hos oss finns alltid lek nära till hands och socialisering av lite blygare hundar.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-form">
+      <h2>Kontakta oss</h2>
+      <form action="">
+        <h4>Namn</h4>
+        <input type="text">
+        <h4>Meddelande</h4>
+        <input type="text" name="" id="">
+        <button class="send-btn">Skicka</button>
+      </form>
+    </section>
+
+    <footer>
+      <img src="src/svg/facebook-logo.svg" alt="facebook logo">
+      <img src="src/svg/twitter-logo.svg" alt="twitter logo">
+      <img src="src/svg/instagram-logo.svg" alt="instagram logo">
+    </footer>
   </body>
 </html>
