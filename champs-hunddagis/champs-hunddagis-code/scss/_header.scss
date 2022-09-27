@@ -1,0 +1,22 @@
+@use "colors";
+
+/* -- Header -------------------------- */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+    position: relative;
+}
+
+.champs-logo {
+    max-height: 50px;
+}
+
+.navbar {
+    display: none;
+}
+
+.hamburger {
+    max-height: 20px;
+}

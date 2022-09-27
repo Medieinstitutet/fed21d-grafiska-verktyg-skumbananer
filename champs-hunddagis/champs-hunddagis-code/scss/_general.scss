@@ -1,0 +1,45 @@
+@use "colors";
+
+/* -- General -------------------------- */
+body {
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+    color: white;
+    background-color: black;
+}
+  
+h1 {
+    margin: 0;
+    font-weight: 200;
+    font-size: 36px;
+}
+
+h2 {
+    margin: 0;
+    color: colors.$dark-purple;
+    font-weight: 300;
+    font-size: 24px;
+}
+
+h3 {
+    margin: 0;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+h4 {
+    margin: 0;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+p {
+    font-weight: 400;
+    font-size: 14px;
+    margin: 0;
+}
+
+button {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+}

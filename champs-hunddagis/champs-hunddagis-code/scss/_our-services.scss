@@ -1,0 +1,30 @@
+@use "colors";
+
+/* -- Our services -------------------------- */
+.our-services {
+    background-color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.card {
+    position: relative;
+    width: 90%;
+    left: 5%;
+    background-color: colors.$dark-purple;
+    text-align: left;
+    margin: 10px 0;
+    border-radius: 8px;
+
+}
+
+.card img {
+    max-width: 100%;
+    display: block;
+    border-radius: 8px 8px 0 0;
+}
+
+.card h3, .card p {
+    padding: 20px;
+    max-width: 80%;
+}

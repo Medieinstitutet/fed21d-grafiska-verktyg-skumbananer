@@ -1,0 +1,51 @@
+@use "colors";
+
+/* -- Contact form -------------------------- */
+
+.contact-form {
+    background-color: white;
+    text-align: center;
+    padding: 30px 0;
+}
+
+form {
+    background-color: colors.$dark-purple;
+    position: relative;
+    max-width: 90%;
+    left: 5%;
+    margin: 10px 0;
+    padding: 10px 0;
+    border-radius: 8px;
+    text-align: left;
+}
+
+form h4 {
+    padding: 5px;
+}
+
+form input {
+    border-radius: 5px;
+    width: 90%;
+    margin: 0px 5px 20px 5px;
+}
+
+.name-input {
+    height: 45px;
+}
+.msg-input {
+    height: 200px;
+}
+
+.send-btn {
+    width: 200px;
+    height: 60px;
+    border-radius: 30px;
+    background-color: colors.$light-purple;
+    border: solid 3px white;
+    color: white;
+    font-weight: 700;
+    font-size: 24px;
+}
+.send-btn:hover {
+    background-color: colors.$dark-purple;
+}

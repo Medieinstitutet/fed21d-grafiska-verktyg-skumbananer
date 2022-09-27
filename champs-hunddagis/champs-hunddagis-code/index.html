@@ -2,34 +2,34 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Champ's Hunddagis</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;700&display=swap" rel="stylesheet">
     <script type="module" src="/main.js"></script>
   </head>
   <body>
-    <header>
-      <img src="src/svg/champs-hunddagis-logo.svg" alt="champs-hunddagis-logo">
-      <nav class="nav-bar">
-        <ul>
-          <li>Tjänster</li>
-          <li>Omdömen</li>
-          <li>Priser</li>
-          <li>Om oss</li>
-          <li>Kontakt</li>
-        </ul>
-        <button class="login-btn">Logga in</button>
-      </nav>
-      <img src="src/svg/hamburger-menu.svg" alt="hamburger-menu">
-    </header>
+    <section class="frontpage">
+      <header>
+        <img class="champs-logo" src="src/svg/champs-hunddagis-logo.svg" alt="champs-hunddagis-logo">
+        <nav class="navbar">
+          <ul>
+            <li>Tjänster</li>
+            <li>Omdömen</li>
+            <li>Priser</li>
+            <li>Om oss</li>
+            <li>Kontakt</li>
+          </ul>
+          <button class="login-btn">Logga in</button>
+        </nav>
+        <img class="hamburger" src="src/svg/hamburger-menu.svg" alt="hamburger-menu">
+      </header>
 
-    <section class="hero-img">
-      <div class="background-opacity">
-        <div>
-          <h1>Hundarnas paradis</h1>
-          <p>Champ's hunddagis, när din hund själv får välja! <br> Ett safe space för alla sorters hundar.</p>
-          <button class="hire-btn">Anlita oss</button>
-        </div>
+      <div>
+        <h1>Hundarnas paradis</h1>
+        <p>Champ's hunddagis, när din hund själv får välja! <br> Ett safe space för alla sorters hundar.</p>
+        <button class="hire-btn">Anlita oss</button>
       </div>
     </section>
 
@@ -58,9 +58,9 @@
       <h2>Kontakta oss</h2>
       <form action="">
         <h4>Namn</h4>
-        <input type="text">
+        <input type="text" class="name-input">
         <h4>Meddelande</h4>
-        <input type="text" name="" id="">
+        <input type="text" class="msg-input">
         <button class="send-btn">Skicka</button>
       </form>
     </section>
