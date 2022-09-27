@@ -21,13 +21,13 @@ nav {
     height: fit-content;
     background-color: transparent;
     border-style: none;
-    font-size: 1.5em;
+    font-size: toRem(24);
     color: $color-white;
     top: 0.8em;
     right: 0.8em;
     padding: 0;
     @include tablet {
-      font-size: 2em;
+      font-size: toRem(32);
       top: 1em;
       right: 0.5em;
     }
