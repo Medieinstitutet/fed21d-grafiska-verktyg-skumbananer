@@ -4,6 +4,8 @@
 
 Mall-repo för kursen `Grafiska Verktyg`
 
+[Bali guiden Live demo](https://bali-guiden.netlify.app/)
+
 # Champ´s hunddagis av Alexander Rusiecki
 
 ### Om designen:
@@ -15,8 +17,6 @@ Rätt så mörkt tema då jag gillar den stilen och det ger en mysig känsla som
 Knappar är rundade samt att kort och inputfält har lite border radius för mjukare känsla.
 
 Jag håller mig till max 3 färger då jag inte vill ha nåt som sticker ut för mycket. "Anlita oss"-knappen vill jag dock ska stå ut lite i designen för att dra in ca$h!!!!
-
-[Live demo](https://bali-guiden.netlify.app/)
 
 # Bali Guiden av Malin Johansson
 
