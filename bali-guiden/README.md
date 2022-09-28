@@ -1,5 +1,7 @@
 [Här](https://www.figma.com/file/FL2mPxregv4Z1Iu1KQbLvi/Bali-Guiden?node-id=0%3A1) hittar du design samt style guide i Figma.
 
+[Live demo](https://bali-guiden.netlify.app/)
+
 ### Hur designen är tänkt:
 
 - I headern är vardera ortsnamn en länk som ska ha utseende och hover state enligt alternativ 1 i style guiden.
