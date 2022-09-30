@@ -5,7 +5,7 @@
 .contact-form {
     background-color: white;
     text-align: center;
-    padding: 30px 0;
+    padding: 0 0 30px 0;
 }
 
 form {
@@ -16,16 +16,17 @@ form {
     margin: 10px 0;
     padding: 10px 0;
     border-radius: 8px;
-    text-align: left;
+    text-align: center;
 }
 
 form h4 {
-    padding: 5px;
+    padding: 7px;
+    text-align: left;
 }
 
 form input {
     border-radius: 5px;
-    width: 90%;
+    width: 95%;
     margin: 0px 5px 20px 5px;
 }
 
@@ -48,4 +49,8 @@ form input {
 }
 .send-btn:hover {
     background-color: colors.$dark-purple;
+}
+.send-btn:disabled {
+    background-color: colors.$disabled-grey;
+    color: #676767;
 }

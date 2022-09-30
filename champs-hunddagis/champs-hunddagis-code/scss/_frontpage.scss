@@ -1,6 +1,12 @@
 @use "colors";
 
 /* -- Frontpage -------------------------- */
+.style-wrap {
+    position: relative;
+    height: 100vh;
+    background-color: black;
+    z-index: -1;
+}
 
 .frontpage {
     position: relative;
@@ -21,7 +27,7 @@
     left: 0;
 }
 
-.frontpage div {
+.presentation {
     position: absolute;
     bottom: 0;
     text-align: center;
@@ -29,7 +35,7 @@
     padding: 20px 0;
 }
 
-.frontpage div p {
+.presentation p {
     // text-align: left;
     line-height: 170%;
 }
