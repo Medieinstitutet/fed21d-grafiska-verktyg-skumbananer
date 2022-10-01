@@ -20,3 +20,15 @@ header {
 .hamburger {
     max-height: 20px;
 }
+
+/* -- Tablet -------------------------- */
+@media screen and (min-width: 768px) {
+    
+    .champs-logo {
+        max-height: 75px;
+    }
+
+    .hamburger {
+        max-height: 40px;
+    }
+};

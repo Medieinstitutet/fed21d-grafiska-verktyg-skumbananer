@@ -19,7 +19,7 @@ h2 {
     padding: 30px 0;
     color: colors.$dark-purple;
     font-weight: 300;
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 
 h3 {
@@ -44,3 +44,21 @@ button {
     font-family: 'Nunito', sans-serif;
     font-weight: 700;
 }
+
+/* -- Tablet -------------------------- */
+@media screen and (min-width: 768px) {
+    
+    h1 {
+        font-size: 4rem;
+        padding: 0 50px;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+        padding: 50px 0;
+    }
+
+    p {
+        font-size: 1.5rem;
+    }
+};

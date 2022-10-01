@@ -55,3 +55,22 @@
     color: white;
 }
 
+/* -- Tablet -------------------------- */
+@media screen and (min-width: 768px) {
+    
+    .presentation {
+        text-align: left;
+        padding: 0;
+    }
+
+    .presentation p {
+        padding: 50px;
+    }
+
+    .hire-btn {
+        position: absolute;
+        top: 0px;
+        right: 0;
+        margin: 25px;
+    }
+};
