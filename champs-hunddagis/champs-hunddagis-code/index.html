@@ -7,14 +7,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;700&display=swap" rel="stylesheet">
-    <script type="module" src="/main.js"></script>
+    <script defer type="module" src="/main.js"></script>
   </head>
   <body>
     <div class="style-wrap">
       <section class="frontpage">
         <header>
           <img class="champs-logo" src="src/svg/champs-hunddagis-logo.svg" alt="champs-hunddagis-logo">
-          <nav class="navbar">
+          <nav class="navbar" id="navbar">
             <ul>
               <li>Tjänster</li>
               <li>Omdömen</li>
@@ -24,12 +24,12 @@
             </ul>
             <button class="login-btn">Logga in</button>
           </nav>
-          <img class="hamburger" src="src/svg/hamburger-menu.svg" alt="hamburger-menu">
+          <div class="hamburger-menu" id="hamburger-menu"></div>
         </header>
   
         <div class="presentation">
           <h1>Hundarnas paradis</h1>
-          <p>Champ's hunddagis, när din hund själv får välja! <br> Ett safe space för alla sorters hundar.</p>
+          <p>CHAMP'S HUNDDAGIS, När din hund själv får välja! <br> Ett safe space för alla sorters hundar.</p>
           <button class="hire-btn">Anlita oss</button>
         </div>
       </section>
@@ -63,7 +63,7 @@
         <input type="text" class="name-input" id="name-input">
         <label for="msg-input">Meddelande</label>
         <textarea class="msg-input" id="msg-input" name="msg"></textarea>
-        <input type="submit" class="send-btn">
+        <input type="submit" class="send-btn" id="send-btn">
       </form>
     </section>
 
