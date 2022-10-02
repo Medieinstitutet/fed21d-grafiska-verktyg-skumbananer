@@ -1,0 +1,103 @@
+@use "colors";
+
+/* -- Cookie banner -------------------------- */
+.cookie-banner {
+    box-sizing: border-box;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    height: 40vh;
+    min-height: 350px;
+    background-color: #d9d9d9;
+    border: 6px solid colors.$light-purple;
+    color: colors.$dark-purple;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cookie-banner.close-cookie-banner {
+    display: none;
+}
+
+.cookie-text {
+    text-align: center;
+    max-width: 50%;
+}
+
+.cookie-text h3 {
+    padding-bottom: 15px;
+    font-size: 1.25rem;
+}
+
+.cookie-text p {
+    padding-bottom: 30px;
+    font-size: 1rem;
+}
+
+.cookie-banner button {
+    display: block;
+    width: 175px;
+    height: 60px;
+    border-radius: 75px;
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.accept-btn {
+    background-color: colors.$success-green;
+    color: white;
+    border: 3px solid white;
+}
+
+.accept-btn:hover {
+    background-color: #32612E;
+}
+
+.reject-btn {
+    color: black;
+    border: 1.5px solid colors.$dark-purple;
+}
+
+.reject-btn:hover {
+    color: white;
+    background-color: black;
+}
+
+/* -- Tablet -------------------------- */
+@media screen and (min-width: 768px) {
+    
+    .cookie-banner {
+        height: 10vh;
+        min-height: 10px;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 40px;
+    }
+    .cookie-text {
+        text-align: left;
+    }
+    .cookie-text h3 {
+        padding: 5px 0;
+        font-size: 1.5rem;
+    }
+    .cookie-text p {
+        padding: 5px 0;
+    }
+    .cookie-banner button {
+        width: 120px;
+        height: 30px;
+        display: inline;
+        font-size: 1rem;
+    }
+};
+
+/* -- Desktop -------------------------- */
+@media screen and (min-width: 1024px) {
+    
+    .cookie-text p {
+        font-size: 1rem;
+    }
+
+};
