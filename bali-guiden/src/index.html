@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="sv" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Bali guiden</title>
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="description" content="Website for travel agency Bali guiden" />
+    <meta name="author" content="Alexander Rusiecki" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+  <body>
+    <!-- COOKIE BANNER -->
+    <section class="cookie-banner" role="dialog" aria-modal="false">
+      <div class="cookie-container">
+        <div class="cookie-warning">
+          <p>Vi använder cookies</p>
+        </div>
+        <div class="cookie-buttons">
+          <button class="cookie-button">Neka</button>
+          <button class="cookie-button">Acceptera</button>
+        </div>
+      </div>
+    </section>
+    <!-- HEADER -->
+    <header>
+      <!-- CITY LINKS -->
+      <section class="cities">
+        <ul>
+          <li>
+            <a href="#">Canggu</a>
+          </li>
+          <li>
+            <a href="#">Uluwatu</a>
+          </li>
+          <li class="bali-image">
+            <img
+              src="assets/svg/bali-outlined.svg"
+              alt="Bali guiden logga"
+              height="50"
+              width="80"
+            />
+          </li>
+          <li>
+            <a href="#">Ubud</a>
+          </li>
+          <li>
+            <a href="#">Lovina</a>
+          </li>
+        </ul>
+      </section>
+      <!-- HAMBURGER BUTTON -->
+      <div
+        class="hamburger-button"
+        aria-label="Öppna menyn"
+        aria-hidden="true"
+        role="button"
+        tabindex="0"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <!-- MENU OVERLAY -->
+      <nav>
+        <button
+          class="close-button"
+          aria-label="Stäng menyn"
+          aria-hidden="true"
+        >
+          &#9587;
+        </button>
+        <ul>
+          <li>
+            <a href="#">Hem</a>
+          </li>
+          <li>
+            <a href="#">Områden</a>
+          </li>
+          <li>
+            <a href="#">Boende</a>
+          </li>
+          <li>
+            <a href="#">Aktiviteter</a>
+          </li>
+          <li>
+            <a href="#">Utflykter</a>
+          </li>
+          <li>
+            <a href="#">Mat</a>
+          </li>
+          <li>
+            <a href="#">Generella råd</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!-- HERO -->
+      <section class="hero">
+        <h1>Bali guiden</h1>
+      </section>
+      <!-- INFORMATION -->
+      <section class="info">
+        <p>
+          Vi på Bali Guiden hjälper dig med din vistelse på Bali. Oavsett om du
+          är förstagångsbesökare eller veteran, om du tänker stanna en vecka
+          eller ett år, om du älskar en fartfylld tillvaro eller en lugn
+          omgivning så har vi tips och information som hjälper dig få ut det
+          mesta av din resa.
+        </p>
+        <div class="separator"></div>
+      </section>
+      <!-- CARDS -->
+      <section class="cards">
+        <!-- CARD -->
+        <article class="card">
+          <img
+            src="assets/images/bali-guiden-boende.JPG"
+            alt="Boende"
+            height="320"
+            width="240"
+          />
+          <h2>boende</h2>
+        </article>
+        <!-- CARD -->
+        <article class="card">
+          <img
+            src="assets/images/bali-guiden-aktiviteter.JPG"
+            alt="Aktiviteter"
+            height="320"
+            width="240"
+          />
+          <h2>aktiviteter</h2>
+        </article>
+        <!-- CARD -->
+        <article class="card">
+          <img
+            src="assets/images/bali-guiden-utflykter.JPG"
+            alt="Utflykter"
+            height="320"
+            width="240"
+          />
+          <h2>utflykter</h2>
+        </article>
+        <!-- CARD -->
+        <article class="card">
+          <img
+            src="assets/images/bali-guiden-mat.jpg"
+            alt="Mat"
+            height="320"
+            width="240"
+          />
+          <h2>mat</h2>
+        </article>
+      </section>
+      <!-- NEWSLETTER -->
+      <section class="newsletter">
+        <p>
+          Missa inte det senaste som händer på Bali. Signa upp för vårt
+          nyhetsbrev här nedan!
+        </p>
+        <form>
+          <label class="visually-hidden" for="newsletter-input">
+            Signa upp för vårat nyhetsbrev
+          </label>
+          <input
+            id="newsletter-input"
+            name="newsletter"
+            type="text"
+            placeholder="Din e-mail............"
+          />
+          <button disabled>Prenumerera</button>
+        </form>
+      </section>
+    </main>
+    <!-- FOOTER -->
+    <footer>
+      <h2>Copyright &copy;</h2>
+    </footer>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

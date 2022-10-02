@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Champ's Hunddagis</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;700&display=swap" rel="stylesheet">
+    <script defer type="module" src="/main.js"></script>
+  </head>
+  <body>
+    <div class="style-wrap">
+      <section class="frontpage">
+        <header>
+          <img class="champs-logo" src="src/svg/champs-hunddagis-logo.svg" alt="champs-hunddagis-logo">
+          <nav class="navbar" id="navbar">
+            <ul>
+              <li>Tjänster</li>
+              <li>Omdömen</li>
+              <li>Priser</li>
+              <li>Om oss</li>
+              <li>Kontakt</li>
+            </ul>
+            <button class="login-btn">Logga in</button>
+          </nav>
+          <div class="hamburger-menu" id="hamburger-menu"></div>
+        </header>
+  
+        <div class="presentation">
+          <h1>Hundarnas paradis</h1>
+          <p>CHAMP'S HUNDDAGIS, När din hund själv får välja! <br> Ett safe space för alla sorters hundar.</p>
+          <button class="hire-btn">Anlita oss</button>
+        </div>
+      </section>
+    </div>
+
+    <section class="our-services">
+      <h2>Våra tjänster</h2>
+      <div class="card-flexbox">
+        <div class="card">
+          <img src="src/images/dog-sleeping.jpg" alt="resting dog">
+          <h3>Övernattning</h3>
+          <p>Här kan din hund tillbringa natten eller flera nätter beroende på behov i egen säng.</p>
+        </div>
+        <div class="card">
+          <img src="src/images/three-dogs.jpg" alt="three dogs">
+          <h3>Dagpassning</h3>
+          <p>Låt oss ta hand om din hund medan du är på jobbet eller har andra åtaganden.</p>
+        </div>
+        <div class="card">
+          <img src="src/images/dogs-playing.jpg" alt="playing dogs">
+          <h3>Lek & Socialisering</h3>
+          <p>Hos oss finns alltid lek nära till hands och socialisering av lite blygare hundar.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-form">
+      <h2>Kontakta oss</h2>
+      <form action="">
+        <label for="name-input">Namn</label>
+        <input type="text" class="name-input" id="name-input">
+        <label for="msg-input">Meddelande</label>
+        <textarea class="msg-input" id="msg-input" name="msg"></textarea>
+        <input type="submit" class="send-btn" id="send-btn">
+      </form>
+    </section>
+
+    <footer>
+      <img src="src/svg/facebook-logo.svg" alt="facebook logo">
+      <img src="src/svg/twitter-logo.svg" alt="twitter logo">
+      <img src="src/svg/instagram-logo.svg" alt="instagram logo">
+    </footer>
+    <div class="cookie-banner" id="cookie-banner">
+      <div class="cookie-text">
+        <h3>Vi använder cookies</h3>
+        <p>Genom att klicka "Ok" ger du ditt samtycke.</p>
+      </div>
+      <div class="cookie-buttons">
+        <button class="accept-btn" id="accept-btn">Ok</button>
+        <button class="reject-btn" id="reject-btn">Avvisa</button>
+      </div>
+    </div>
+  </body>
+</html>

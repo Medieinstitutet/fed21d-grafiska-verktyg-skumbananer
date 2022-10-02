@@ -1,0 +1,32 @@
+// This file contains very basic style rules
+
+html {
+  box-sizing: border-box;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: $color-black;
+  font-size: toRem(24);
+  &:hover {
+    color: $color-orange;
+    text-decoration: underline;
+  }
+}
+
+a,
+button {
+  cursor: pointer;
+}

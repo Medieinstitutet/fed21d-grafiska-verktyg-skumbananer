@@ -1,0 +1,57 @@
+@use "colors";
+
+/* -- Our services -------------------------- */
+.our-services {
+    background-color: white;
+    text-align: center;
+}
+
+.card {
+    position: relative;
+    width: 90%;
+    max-width: 860px;
+    left: 5%;
+    background-color: colors.$dark-purple;
+    text-align: left;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.8);
+}
+
+.card img {
+    max-width: 100%;
+    display: block;
+    border-radius: 8px 8px 0 0;
+}
+
+.card h3, .card p {
+    padding: 20px;
+    max-width: 80%;
+}
+
+/* -- Tablet -------------------------- */
+@media screen and (min-width: 768px) {
+    
+    .card-flexbox {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .card {
+        width: 45%;
+        margin: 20px;
+        left: 0;
+    }
+};
+
+/* -- Desktop -------------------------- */
+@media screen and (min-width: 1024px) {
+    
+    .card-flexbox {
+        justify-content: space-around;
+        flex-wrap: nowrap;
+    }
+    .card {
+        width: 30%;
+    }
+};

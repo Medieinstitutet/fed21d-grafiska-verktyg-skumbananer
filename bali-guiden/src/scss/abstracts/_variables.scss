@@ -1,0 +1,20 @@
+// This file contains all application-wide Sass variables.
+
+// Font face
+$primary-font: 'Montserrat', sans-serif;
+
+// Colors
+$color-orange: #ff9900;
+$color-peach: #ffb74b;
+$color-apricot: #ffcf88;
+$color-berry: #4972a7;
+$color-black: #000000;
+$color-white: #ffffff;
+
+// Font weights
+$font-weight-regular: 400;
+$font-weight-semi-bold: 600;
+
+// Media query breakpoints
+$breakpoint-tablet: '768px';
+$breakpoint-desktop: '992px';

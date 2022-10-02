@@ -1,0 +1,68 @@
+// This file contains all css rules related to the site header.
+
+header {
+  padding: 0.3em 0;
+  position: relative;
+  @include tablet {
+    padding: 1.2em 4em 1.2em 0;
+  }
+  @include desktop {
+    padding: 1.2em 6em;
+  }
+  .cities {
+    text-transform: uppercase;
+    ul {
+      li:not(.bali-image) {
+        display: none;
+        @include tablet {
+          display: block;
+        }
+      }
+      li img {
+        height: toRem(50);
+        @include tablet {
+          height: toRem(61);
+        }
+        @include desktop {
+          height: toRem(68);
+        }
+      }
+    }
+  }
+  .hamburger-button {
+    height: 46%;
+    padding: 1.1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    @include tablet {
+      height: 26%;
+      padding: 2.2em 1.1em;
+    }
+    @include desktop {
+      height: 26%;
+      padding: 2.6em 1.1em;
+    }
+    span {
+      background-color: $color-orange;
+      border-radius: 1em;
+      height: toRem(3.12);
+    }
+    :nth-child(1) {
+      width: toRem(22.31);
+    }
+    :nth-child(2) {
+      width: toRem(19.35);
+    }
+    :nth-child(3) {
+      width: toRem(24.88);
+    }
+  }
+}

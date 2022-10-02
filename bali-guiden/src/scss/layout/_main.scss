@@ -1,0 +1,210 @@
+// This file contains all styles related to the main section of the site.
+
+main {
+  .hero {
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    background-image: url('/assets/images/bali-guiden-palmer-rotate.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: toRem(444);
+    background-color: $color-white;
+    opacity: 0.8;
+    @include tablet {
+      background-image: url('/assets/images/bali-guiden-palmer.jpg');
+      height: toRem(472);
+    }
+    @include tablet {
+      height: toRem(669);
+    }
+    h1 {
+      color: $color-white;
+      font-size: toRem(48);
+      font-weight: $font-weight-semi-bold;
+      text-shadow: 4px 4px 4px $color-berry;
+      margin-top: 3em;
+      @include tablet {
+        font-size: toRem(64);
+        margin-top: 2.5em;
+      }
+      @include desktop {
+        font-size: toRem(96);
+      }
+    }
+  }
+  .info {
+    padding: 1.5em 3.6em;
+    font-size: toRem(12);
+    @include tablet {
+      padding: 1.5em 5.5em;
+    }
+    @include desktop {
+      padding: 8em 20em;
+    }
+    p {
+      line-height: toRem(20);
+      text-align: center;
+      @include tablet {
+        font-size: toRem(24);
+        line-height: toRem(40);
+        margin-bottom: 4em;
+      }
+    }
+    .separator {
+      border-radius: 1em;
+      height: toRem(5);
+      width: toRem(241);
+      margin-top: 3em;
+      margin-bottom: 1em;
+      margin-left: auto;
+      margin-right: auto;
+      background-color: $color-orange;
+      @include tablet {
+        width: toRem(394);
+        margin-bottom: 8em;
+      }
+      @include desktop {
+        width: toRem(535);
+        margin-bottom: 4em;
+      }
+    }
+  }
+
+  .cards {
+    display: none;
+    background-color: $color-apricot;
+    color: $color-orange;
+    text-align: center;
+    @include tablet {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      align-items: center;
+      justify-items: center;
+      padding: 5em;
+      gap: 5em;
+      .card {
+        text-transform: uppercase;
+        box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
+        width: toRem(240);
+        height: toRem(400);
+        padding: 1.5em;
+        background-color: $color-white;
+        border-radius: toRem(25);
+        img {
+          width: 100%;
+          height: auto;
+          border-radius: toRem(15);
+        }
+        h2 {
+          margin-top: 1.5em;
+        }
+      }
+    }
+    @include desktop {
+      display: flex;
+      padding-top: 7em;
+      padding-bottom: 7em;
+    }
+  }
+
+  .newsletter {
+    background-color: $color-peach;
+    text-align: center;
+    @include desktop {
+      padding-top: 2em;
+      padding-bottom: 6em;
+    }
+    p {
+      font-size: toRem(12);
+      padding: 3em 3.5em 0 3.5em;
+      color: $color-white;
+      font-weight: $font-weight-semi-bold;
+      @include tablet {
+        font-size: toRem(24);
+        padding: 3em 5.5em 0 5.5em;
+        margin-top: 0;
+        margin-bottom: 1em;
+      }
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      border-style: none;
+      outline: none;
+      @include desktop {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding-left: 17em;
+        padding-right: 17em;
+      }
+      input {
+        background-color: $color-white;
+        border-radius: toRem(5);
+        border-color: $color-orange;
+        border-style: solid;
+        height: toRem(24.79);
+        width: 65%;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 0.5em;
+        &::placeholder {
+          color: $color-orange;
+          text-align: left;
+          font-size: toRem(12);
+        }
+        @include tablet {
+          width: 55%;
+          height: toRem(50);
+          font-size: toRem(24);
+          &::placeholder {
+            font-size: toRem(24);
+          }
+        }
+        @include desktop {
+          margin-top: 0;
+          margin-bottom: 0;
+          margin-left: 0;
+          margin-right: 2em;
+          height: toRem(50);
+          padding: 0;
+          padding-left: 0.5em;
+        }
+      }
+      button {
+        background-color: $color-white;
+        color: $color-orange;
+        box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: toRem(5);
+        border-color: $color-orange;
+        border-style: solid;
+        width: 30%;
+        margin-bottom: 3em;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: toRem(12);
+        padding: 0.5em 0;
+        &:hover {
+          background-color: $color-peach;
+          color: $color-white;
+          border-color: $color-white;
+          border-style: solid;
+        }
+        @include tablet {
+          width: 25%;
+          font-size: toRem(24);
+          padding: 0.4em 1em;
+        }
+        @include desktop {
+          margin: 0;
+        }
+      }
+    }
+  }
+  .cookie-banner {
+    display: none;
+  }
+}

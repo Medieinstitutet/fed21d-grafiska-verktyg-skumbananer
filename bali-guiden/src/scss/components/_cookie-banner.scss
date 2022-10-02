@@ -1,0 +1,62 @@
+// This file contains all styles related to site cookie banner.
+
+.cookie-banner {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  backdrop-filter: blur(10px);
+  z-index: 10;
+  .cookie-container {
+    width: 90%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: $color-white;
+    font-weight: $font-weight-semi-bold;
+    background-color: $color-peach;
+    border-radius: toRem(10);
+    .cookie-warning p {
+      font-size: toRem(36);
+      text-align: center;
+    }
+    .cookie-buttons {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      @include tablet {
+        width: 55%;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      @include desktop {
+        width: 30%;
+      }
+      button {
+        background-color: $color-white;
+        color: $color-orange;
+        border-color: $color-orange;
+        border-radius: toRem(5);
+        border-style: solid;
+        font-size: toRem(24);
+        margin-bottom: 1em;
+        padding: 0.5em 1em;
+        box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+        &:hover {
+          background-color: $color-peach;
+          color: $color-white;
+          border-color: $color-white;
+          border-style: solid;
+        }
+      }
+      :nth-child(2) {
+        font-size: toRem(32);
+      }
+    }
+  }
+}

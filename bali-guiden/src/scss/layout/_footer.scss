@@ -1,0 +1,13 @@
+// This file contains all styles related to the footer section of the site.
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $color-orange;
+  font-size: toRem(12);
+  font-weight: $font-weight-semi-bold;
+  @include tablet {
+    font-size: toRem(20);
+  }
+}
