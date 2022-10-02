@@ -6,9 +6,9 @@ const acceptBtn = document.getElementById("accept-btn");
 const rejectBtn = document.getElementById("reject-btn");
 const cookieBanner = document.getElementById("cookie-banner");
 
-function closeCookieBanner() {
-    cookieBanner.classList.toggle("close-cookie-banner");
-};
+// function closeCookieBanner() {
+//     cookieBanner.classList.toggle("close-cookie-banner");
+// };
 
 burgerMenu.addEventListener("click", function() {
     this.classList.toggle("open");
@@ -17,3 +17,7 @@ burgerMenu.addEventListener("click", function() {
 
 acceptBtn.addEventListener("click", closeCookieBanner);
 rejectBtn.addEventListener("click", closeCookieBanner);
+
+function closeCookieBanner() {
+    cookieBanner.classList.toggle("close-cookie-banner");
+};

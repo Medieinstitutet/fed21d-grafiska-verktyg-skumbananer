@@ -44,7 +44,7 @@
     height: 45px;
     border-radius: 30px;
     color: colors.$dark-purple;
-    font-size: 19px;
+    font-size: 1.25rem;
     margin-top: 10px;
     border: none;
 }
@@ -72,6 +72,8 @@
 
     .hire-btn {
         position: absolute;
+        width: 200px;
+        height: 55px;
         top: 0px;
         right: 0;
         margin: 25px;
@@ -95,6 +97,10 @@
     }
 
     .hire-btn {
+        width: 290px;
+        height: 80px;
+        border-radius: 50px;
+        font-size: 2rem;
         margin: 40px 0;
     }
 
