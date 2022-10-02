@@ -1,0 +1,33 @@
+@use "colors";
+
+/* -- Header -------------------------- */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+    position: relative;
+}
+
+.champs-logo {
+    max-height: 50px;
+}
+
+/* -- Tablet -------------------------- */
+@media screen and (min-width: 768px) {
+    
+    .champs-logo {
+        max-height: 75px;
+    };
+
+};
+
+/* -- Desktop -------------------------- */
+@media screen and (min-width: 1024px) {
+
+    header {
+        max-width: 84%;
+        left: 8%;
+        padding: 20px 0;
+    };
+};

@@ -1,0 +1,107 @@
+@use "colors";
+
+/* -- Frontpage -------------------------- */
+.style-wrap {
+    position: relative;
+    height: 100vh;
+    background-color: black;
+}
+
+.frontpage {
+    position: relative;
+    height: 100vh;
+}
+
+.frontpage::before {
+    content: "";
+    background-image: url(../src/images/dogs-chilling-cropped-mobile.jpg);
+    opacity: 0.8;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.presentation {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.presentation p {
+    // text-align: left;
+    line-height: 170%;
+}
+
+.hire-btn {
+    width: 170px;
+    height: 45px;
+    border-radius: 30px;
+    color: colors.$dark-purple;
+    font-size: 1.25rem;
+    margin-top: 10px;
+    border: none;
+}
+
+.hire-btn:hover {
+    background-color: colors.$dark-purple;
+    color: white;
+}
+
+/* -- Tablet -------------------------- */
+@media screen and (min-width: 768px) {
+    
+    .frontpage::before {
+        background-image: url(../src/images/dogs-chilling-cropped-tablet.jpg);
+    }
+
+    .presentation {
+        text-align: left;
+        padding: 0;
+    }
+
+    .presentation p {
+        padding: 50px;
+    }
+
+    .hire-btn {
+        position: absolute;
+        width: 200px;
+        height: 55px;
+        top: 0px;
+        right: 0;
+        margin: 25px;
+    }
+};
+
+/* -- Desktop -------------------------- */
+@media screen and (min-width: 1024px) {
+
+    .frontpage::before {
+        background-image: url(../src/images/dogs-chilling-desktop.jpg);
+    }
+
+    .presentation p {
+        padding: 50px 0;
+    }
+
+    .presentation {
+        max-width: 84%;
+        left: 8%;
+    }
+
+    .hire-btn {
+        width: 290px;
+        height: 80px;
+        border-radius: 50px;
+        font-size: 2rem;
+        margin: 40px 0;
+    }
+
+};

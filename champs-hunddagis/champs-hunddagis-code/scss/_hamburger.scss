@@ -1,0 +1,48 @@
+/* -- Hamburger -------------------------- */
+
+.hamburger-menu {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s;
+    z-index: 2;
+}
+.hamburger-menu::before {
+    content: "";
+    position: absolute;
+    width: 28px;
+    height: 2px;
+    background: white;
+    transition: 0.2s;
+    transform: translateY(-10px);
+    box-shadow: 0 10px 0 white;
+}
+.hamburger-menu::after {
+    content: "";
+    position: absolute;
+    width: 28px;
+    height: 2px;
+    background: white;
+    transition: 0.2s;
+    transform: translateY(10px);
+}
+
+.hamburger-menu.open::before {
+    transform: translateY(0px) rotate(45deg);
+    box-shadow: 0 0 0 white;
+}
+.hamburger-menu.open::after {
+    transform: translateY(0px) rotate(-45deg);
+}
+
+/* -- Desktop -------------------------- */
+@media screen and (min-width: 1024px) {
+
+    .hamburger-menu {
+        display: none;
+    };
+};
